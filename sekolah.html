@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     body, html {
-      height: 100%;
-      margin: 0;
+      /* height: 100%;
+      margin: 0; */
     }
     .bg { 
       background-image: url("img/back.jpg"); 
-      height: 100%;  
+      height: auto;  
       background-position: center;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-size: cover;
     }
 
@@ -38,7 +38,8 @@
     }
   </style>
 </head>
-<body class="bg">
+<body>
+  <div class="bg">
   <div align="center">
     <img src="img/portal.png" alt="" style="width: 646px; padding-top:30px;" class="animated fadeIn mb-3">
   </div>
@@ -109,6 +110,19 @@
         <h5 class="animated fadeIn mb-4">bantaeng</h5>
       </button>
     </div>
+    <div class="row"> 
+      <div class="col-xs-4"  align="center">
+        <button class="btn aqua-gradient" onclick="openLink('/portal_gis/sekolah_manokwari/')">
+          <img src="img/manokwari.png" alt="" style="width: 130px; height:100px;" class="animated fadeIn mb-3"><br>
+          <h5 class="animated fadeIn mb-4">Manokwari</h5>
+        </button>
+      </div>
+      <div class="col-xs-4"  align="center">
+        <button class="btn aqua-gradient" onclick="openLink('/portal_gis/sekolah_jayapura/')">
+          <img src="img/Jayapura.png" alt="" style="width: 130px; height:100px;" class="animated fadeIn mb-3"> <br>
+          <h5 class="animated fadeIn mb-4">Jayapura</h5>
+        </button>
+      </div> 
     <div class="p-2 bd-highlight">
       <button class="btn aqua-gradient" onclick="openLink('/portal_gis/sekolah_makassar/')">
         <img src="img/makassar.png" alt="" style="width: 100px; height:100px;" class="animated fadeIn mb-3"><br>
@@ -120,11 +134,11 @@
         <img src="img/asmat.png" alt="" style="width: 100px; height:100px;" class="animated fadeIn mb-3"> <br>
         <h5 class="animated fadeIn mb-4">asmat</h5>
       </button>
-    </div>
-  </div> 
+  
+   
  
   <a class="btn-floating btn-lg btn-default ft" href="index.html"><i class="fas fa-arrow-left"></i></a>
-
+</div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
